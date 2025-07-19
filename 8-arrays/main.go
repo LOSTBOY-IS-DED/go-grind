@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+//NOTE : When you know the size of the array in advance , to optimize more memory
+// fixed size
+// constant time access
+
 func main() {
 	var nums [4]int
 
@@ -24,4 +28,12 @@ func main() {
 	var names [3]string
 	names[0] = "Subh"
 	fmt.Println(names) // prints [Subh  ]
+
+	// to declare it in single line
+	var names2 = [3]string{"Subh", "Chaudhury", "Neha"}
+	fmt.Println(names2) // prints [Subh Chaudhury Neha]
+
+	// 2D array
+	array := [2][2]int{{1, 2}, {3, 4}}
+	fmt.Println(array) // prints [[1 2] [3 4]]
 }
